@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Simple Calculator</title>
@@ -22,7 +22,42 @@
         <option value="/">Division</option>
       </select>
       <br>
-      <button type="button" onclick="calculate()">Calculate</button>
+      <button type = "button" onclick= "alert(calculate())">calculate</button>
+      <button type = "button" onclick= "alert(calculate())">calculate</button>
+      <button type = "button" onclick= "alert(calculate())">calculate</button>
+      <button type = "button" onclick= "alert(calculate())">calculate</button>
+      <button onclick="alert('great to see that you are calculating')">Click me</button>
+    </form>
+    <div id="add"></div>
+    <div id="sub"></div>
+    <div id="mul"></div>
+    <div id="div"></div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Simple Calculator</h1>
+    <form>
+      <label for="first-number">First number:</label>
+      <input type="text" id="first-number" name="first-number">
+      <br>
+      <label for="second-number">Second number:</label>
+      <input type="text" id="second-number" name="second-number">
+      <br>
+      <button type="button" onclick="calculate('+')">Add</button>
+      <button type="button" onclick="calculate('-')">Subtract</button>
+      <button type="button" onclick="calculate('*')">Multiply</button>
+      <button type="button" onclick="calculate('/')">Divide</button>
+      <button onclick="alert('Great to see that you are calculating!')">Click me</button>
     </form>
     <div id="result"></div>
   </div>
